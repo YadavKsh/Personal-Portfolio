@@ -1,0 +1,60 @@
+/* Form.module.css */
+.container {
+    background-image: url(background.avif);
+  /* background-color: #2c2c2c; Dark background to match the website */
+  color: #fff; /* White text for contrast */
+  min-height: 100vh; /* Ensure the background covers the whole page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding to ensure content is not touching the edges */
+}
+
+.form {
+  background-color: #3a3a3a; /* Dark grey background for the form */
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for better visual */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Make sure form elements stretch to fill the form width */
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold; /* Make labels bold */
+  color: #f0f0f0; /* Light grey for better readability */
+}
+
+.input, .textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Increase font size for better readability */
+  background-color: #fff; /* White background for input fields */
+  color: #000; /* Black text color for input fields */
+}
+
+.textarea {
+  resize: vertical; /* Allow vertical resize for textarea */
+  min-height: 100px; /* Set a minimum height for textarea */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  margin-top: 10px; /* Add margin for better spacing */
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,107 @@
+@import "../vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: "Ubuntu";
+}
+
+.description {
+  width:800px;
+  font-size: 30px;
+  font-family: "Playwrite AR";
+  margin-bottom: 52px;
+}
+
+.contactBtn {
+  font-family: "Teko";
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 17px 26px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.heroImg {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image a circle */
+  margin-right:-90px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 40px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  /* background: rgba(25, 55, 109, 0.7); */
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 250px;
+  top: 246px;
+  right: -25vw;
+  border-radius: 764px;
+  /* background: rgba(25, 55, 109, 0.7); */
+  filter: blur(100px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    align-items: center;
+  }
+}
